@@ -1,0 +1,18 @@
+@prefix om-owl:  <http://knoesis.wright.edu/ssw/ont/sensor-observation.owl#> .
+@prefix sens-obs:  <http://knoesis.wright.edu/ssw/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix weather:  <http://knoesis.wright.edu/ssw/ont/weather.owl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+sens-obs:Observation_RelativeHumidity_C1081_2004_08_08_06_05_00
+      a       weather:RelativeHumidityObservation ;
+      om-owl:observedProperty
+              weather:_RelativeHumidity ;
+      om-owl:procedure sens-obs:System_C1081 ;
+      om-owl:result sens-obs:MeasureData_RelativeHumidity_C1081_2004_08_08_06_05_00 ;
+      om-owl:samplingTime sens-obs:Instant_2004_08_08_06_05_00 .
+
+sens-obs:Instant_2004_08_08_06_05_00
+      a       time:Instant ;
+          time:inXSDDateTime
+              "2004-08-08T06:05:00"^^xsd:string .

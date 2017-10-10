@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:j.0="http://www.citydatafusion.org/ontologies/2014/1/sma#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.2="http://rdfs.org/sioc/types#"
+    xmlns:j.3="http://purl.org/dc/terms/"
+    xmlns:j.4="http://rdfs.org/sioc/ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.5="http://streamreasoning.org/ontology/SLD#" > 
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/mp/583988777913311232">
+    <j.0:num_retweets rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</j.0:num_retweets>
+    <j.4:topic rdf:resource="http://streamreasoning.org/fe/tag/fuorisalone2015"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/fe/tag/landrover"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#design Land Rover at Fuorisalone 2015 - preview #landrover #landroverdiscoverysport #fuorisalone2015 http://t.co/fcJAXVvECd</j.4:content>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/fe/user/2838120795"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/fe/topic/fuorisalone"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/fe/tag/landroverdiscoverysport"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/fe/Land Rover"/>
+    <j.0:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</j.0:language>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-03T15:45:49.000+02:00</j.3:created>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">583988777913311232</j.4:id>
+    <j.4:topic rdf:resource="http://streamreasoning.org/fe/tag/design"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/user/2838120795">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/profile_images/524211138217517056/tRH_3jw0_normal.jpeg</j.4:avatar>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lulopdotcomglob</j.4:name>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2838120795</j.4:id>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/fe/mp/583988777913311232"/>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/tag/landroverdiscoverysport">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">landroverdiscoverysport</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/tag/design">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">design</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/topic/fuorisalone">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone</rdfs:label>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Category"/>
+    <j.1:broader rdf:resource="http://streamreasoning.org/fe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.streamreasoning.com/demos/sld/dec/recorder/2015-04-03T13:43:16.887Z/iGraph1428068835800">
+    <j.5:hasTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-03T15:47:15.800+02:00</j.5:hasTimestamp>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/tag/fuorisalone2015">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone2015</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/tag/landrover">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">landrover</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/fe/Land Rover">
+    <j.1:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Rover</j.1:altLabel>
+  </rdf:Description>
+</rdf:RDF>
