@@ -40,8 +40,6 @@ public class Console {
         try {
             if (args[0].equals("--virtual") || args[0].equals("-v")) {
                 repo = getVirtualRepository(p = new ConsoleProperties(args[1]));
-            } else if (args[0].equals("--standard") || args[0].equals("-s")) {
-                repo = getStandardRepository(p = new ConsoleProperties(args[1]));
             } else {
                 repo = getStandardRepository(p = new ConsoleProperties(args[0]));
             }

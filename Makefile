@@ -1,4 +1,4 @@
-IMG_TAG=rsplab-stream-server
+IMG_TAG=sse
 
 build:
 	docker build -t  $(IMG_TAG) .
