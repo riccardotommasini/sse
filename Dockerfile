@@ -4,7 +4,7 @@ ENV STREAMER_HOME /usr/local/streamer
 
 WORKDIR ${STREAMER_HOME}
 
-COPY target/rsplab-streamer-1.0.jar ./rsplab-streamer-1.0.jar
+COPY target/sse-1.0.jar ./see-1.0.jar
 
 # ADD lib/postgres.jar $JETTY_HOME/lib/ext/postgres.jar
 # ADD lib/mysql.jar $JETTY_HOME/lib/ext/mysql.jar
