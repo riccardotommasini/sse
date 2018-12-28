@@ -4,34 +4,31 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>it.polimi.rsp.rsplab</groupId>
-    <artifactId>rsplab-streamer</artifactId>
+    <groupId>it.polimi.deib.semweb.sparql.sse</groupId>
+    <artifactId>sse</artifactId>
     <version>1.0</version>
-
-
-    <repositories>
-        <repository>
-            <id>maven-restlet</id>
-            <name>Restlet repository</name>
-            <url>https://maven.restlet.com</url>
-        </repository>
-    </repositories>
 
     <dependencies>
 
-        <!-- UTILS -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.16</version>
-        </dependency>
+        <!-- LOGGING -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>LATEST</version>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
         </dependency>
 
-        <!-- Database Drivers: move to "provided"-->
+
+        <!-- Database Drivers: move to "runtime"-->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -45,39 +42,49 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- RESTLET -->
+        <!-- SPARKJava -->
 
         <dependency>
-            <groupId>org.restlet.jse</groupId>
-            <artifactId>org.restlet</artifactId>
-            <version>2.3.2</version>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-core</artifactId>
+            <version>2.7.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.restlet.jse</groupId>
-            <artifactId>org.restlet.ext.slf4j</artifactId>
-            <version>2.3.2</version>
-        </dependency>
+
+
+        <!-- RESTLET -->
+
         <dependency>
             <groupId>commons-configuration</groupId>
             <artifactId>commons-configuration</artifactId>
             <version>1.10</version>
         </dependency>
+
         <!-- ONTOP -->
 
         <dependency>
             <groupId>it.unibz.inf.ontop</groupId>
             <artifactId>ontop-system-sql-owlapi</artifactId>
-            <version>3.0.0-beta-2-SNAPSHOT</version>
+            <version>3.0.0-beta-2</version>
         </dependency>
         <dependency>
             <groupId>it.unibz.inf.ontop</groupId>
             <artifactId>ontop-rdf4j</artifactId>
-            <version>3.0.0-beta-2-SNAPSHOT</version>
+            <version>3.0.0-beta-2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>it.unibz.inf.ontop</groupId>
             <artifactId>ontop-system-core</artifactId>
-            <version>3.0.0-beta-2-SNAPSHOT</version>
+            <version>3.0.0-beta-2</version>
         </dependency>
         <!-- RDF4J -->
         <dependency>
@@ -133,7 +140,7 @@
                         <index>true</index>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>it.polimi.sparql.server.lite.Console</mainClass>
+                            <mainClass>it.polimi.semweb.sparql.sse.Console</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
